@@ -13,6 +13,8 @@
     --neutral-very-dark-blue: hsl(234, 12%, 34%);
     --neutral-grayish-blue: hsl(229, 6%, 66%);
     --neutral-very-light-gray: hsl(0, 0%, 98%);
+
+    --grid-child-accent-color: grey;
 }
 
 body{
@@ -37,6 +39,7 @@ h1{
 
 p{
     color: var(--neutral-grayish-blue);
+    margin-bottom: 4.5rem;
     /* background-color: blue; */
 }
 
@@ -59,4 +62,28 @@ p{
     grid-template-columns: 1fr;
     padding: 0 2rem;
 
+    gap: 1.75rem;
+
+
+}
+
+.child-card{
+    background-color: white;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 0 10%;
+    box-shadow: 0 0.25rem 1rem 0 hsla(229, 6%, 66%, 0.5)
+}
+
+.child-card::before{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    box-shadow: inset 1rem 1rem 1rem 1rem var(--grid-child-accent-color);
 }
