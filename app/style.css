@@ -21,6 +21,8 @@ body{
     font-size: 0.9375rem;
     font-family: 'Poppins', sans-serif;
     background-color: var(--neutral-very-light-gray);
+
+    position: relative;
 }
 
 h1,
