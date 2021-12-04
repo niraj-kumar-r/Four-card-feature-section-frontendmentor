@@ -18,4 +18,31 @@
 body{
     font-size: 0.9375rem;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--neutral-very-light-gray);
+}
+
+h1,
+p{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    margin-top: 5.5rem;
+    color: var(--neutral-very-dark-blue);
+}
+
+.slim-heading{
+    font-weight: 200;
+    font-size: 1.5rem;
+    /* background-color: red; */
+
+}
+
+.bold-heading{
+    font-weight: 600;
+    font-size: 1.5rem;
+    /* background-color: red; */
+
 }
