@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --red: hsl(0, 78%, 62%);
+    --blue: hsl(212, 86%, 64%);
+    --orange: hsl(34, 97%, 64%);
+    --cyan: hsl(180, 62%, 55%);
+
+    --neutral-very-dark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+    --neutral-very-light-gray: hsl(0, 0%, 98%);
+
+    --grid-child-accent-color: grey;
+}
+
+body{
+    font-size: 0.9375rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--neutral-very-light-gray);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,
+p{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    margin-top: 5.5rem;
+    margin-bottom: 1rem;
+    color: var(--neutral-very-dark-blue);
+    /* background-color: red; */
+}
+
+p{
+    color: var(--neutral-grayish-blue);
+    margin-bottom: 4.5rem;
+    /* background-color: blue; */
+}
+
+.slim-heading{
+    font-weight: 200;
+    font-size: 1.5rem;
+    /* background-color: red; */
+
+}
+
+.bold-heading{
+    font-weight: 600;
+    font-size: 1.5rem;
+    /* background-color: red; */
+
+}
+
+.main-card{
+    max-width: 75rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* justify-items: center; */
+    padding: 0 1.75rem;
+    /* background-color: red; */
+
+    margin-bottom: 5rem;
+
+    gap: 1.75rem;
+
+
+}
+
+.child-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 2% 10% 10%;
+    box-shadow: 0 0.25rem 1rem 0 hsla(229, 6%, 66%, 0.4)
+}
+
+
+.child-card::before{
+    content: "";
+    width: 100%;
+    height: 0.4rem;
+    background-image: linear-gradient(to bottom, var(--grid-child-accent-color), white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    /* box-shadow: inset 1rem 1rem 1rem 1rem var(--grid-child-accent-color); */
+}
+
+.child-card-heading{
+    color: var(--neutral-very-dark-blue);
+    /* background-color: red; */
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.child-card-paragraph{
+    color: var(--neutral-grayish-blue);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.75em;
+    /* background-color: blue; */
+}
+
+.child-card-svg-icon{
+    /* background-color: red; */
+    align-self: end;
+}
