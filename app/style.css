@@ -14,3 +14,8 @@
     --neutral-grayish-blue: hsl(229, 6%, 66%);
     --neutral-very-light-gray: hsl(0, 0%, 98%);
 }
+
+body{
+    font-size: 0.9375rem;
+    font-family: 'Poppins', sans-serif;
+}
