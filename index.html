@@ -17,12 +17,14 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
-        position: absolute;
-        width: auto;
-        top: 100%;
+        /* position: sticky;
+        top: calc(100% - 1.5rem);
         left: 50%;
-        transform: translateX(-50%);
-        /* background-color: red; */
+        transform: translateX(-50%);*/
+
+        margin-top: auto;
+        margin-bottom: 0;
+        
         font-size: 11px;
         text-align: center;
       }
@@ -56,14 +58,19 @@
       </p>
 
       <div class="main-card">
-        <div class="child-card">
+        <div class="child-card" style="--grid-child-accent-color: var(--cyan)">
           <h2 class="child-card-heading">Supervisor</h2>
 
           <h3 class="child-card-paragraph">
             Monitors activity to identify project roadblocks
           </h3>
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="child-card-svg-icon"
+          >
             <g fill="none">
               <path
                 fill="#676E74"
@@ -117,14 +124,19 @@
           </svg>
         </div>
 
-        <div class="child-card">
+        <div class="child-card" style="--grid-child-accent-color: var(--red)">
           <h2 class="child-card-heading">Team Builder</h2>
 
           <h3 class="child-card-paragraph">
             Scans our talent network to create the optimal team for your project
           </h3>
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="child-card-svg-icon"
+          >
             <g fill="none">
               <path
                 fill="#EFEFF4"
@@ -162,14 +174,19 @@
           </svg>
         </div>
 
-        <div class="child-card">
+        <div class="child-card" style="--grid-child-accent-color: var(--orange)">
           <h2 class="child-card-heading">Karma</h2>
 
           <h3 class="child-card-paragraph">
             Regularly evaluates our talent to ensure quality
           </h3>
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="child-card-svg-icon"
+          >
             <g fill="none">
               <path fill="#676E74" d="M26.375 52.625h11.25V64h-11.25z" />
               <path fill="#333637" d="M32 52.625h5.625V64H32z" />
@@ -228,14 +245,19 @@
           </svg>
         </div>
 
-        <div class="child-card">
+        <div class="child-card" style="--grid-child-accent-color: var(--blue)">
           <h2 class="child-card-heading">Calculator</h2>
 
           <h3 class="child-card-paragraph">
             Uses data from past projects to provide better delivery estimates
           </h3>
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="child-card-svg-icon"
+          >
             <g fill="none">
               <path
                 fill="#474F54"
@@ -266,9 +288,15 @@
     <footer>
       <p class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/niraj-kumar-r/Four-card-feature-section-frontendmentor">Niraj Kumar</a>.
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by
+        <a
+          href="https://github.com/niraj-kumar-r/Four-card-feature-section-frontendmentor"
+        >
+          Niraj Kumar </a
+        >.
       </p>
     </footer>
   </body>

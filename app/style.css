@@ -22,7 +22,9 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--neutral-very-light-gray);
 
-    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1,
@@ -60,9 +62,14 @@ p{
 }
 
 .main-card{
+    max-width: 75rem;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 2rem;
+    /* justify-items: center; */
+    padding: 0 1.75rem;
+    /* background-color: red; */
+
+    margin-bottom: 5rem;
 
     gap: 1.75rem;
 
@@ -70,22 +77,45 @@ p{
 }
 
 .child-card{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 0.5rem;
     position: relative;
-    padding: 0 10%;
-    box-shadow: 0 0.25rem 1rem 0 hsla(229, 6%, 66%, 0.5)
+    padding: 2% 10% 10%;
+    box-shadow: 0 0.25rem 1rem 0 hsla(229, 6%, 66%, 0.4)
 }
+
 
 .child-card::before{
     content: "";
     width: 100%;
-    height: 0.2rem;
-    background-color: transparent;
+    height: 0.4rem;
+    background-image: linear-gradient(to bottom, var(--grid-child-accent-color), white);
     position: absolute;
     top: 0;
     left: 0;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    box-shadow: inset 1rem 1rem 1rem 1rem var(--grid-child-accent-color);
+    /* box-shadow: inset 1rem 1rem 1rem 1rem var(--grid-child-accent-color); */
+}
+
+.child-card-heading{
+    color: var(--neutral-very-dark-blue);
+    /* background-color: red; */
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.child-card-paragraph{
+    color: var(--neutral-grayish-blue);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.75em;
+    /* background-color: blue; */
+}
+
+.child-card-svg-icon{
+    /* background-color: red; */
+    align-self: end;
 }
