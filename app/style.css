@@ -124,6 +124,12 @@ p{
 
 
 @media screen and (min-width: 600px) {
+    .main-card{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
     
+
     
 }
