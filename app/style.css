@@ -124,6 +124,11 @@ p{
 
 @media screen and (min-width: 56.25rem) {
 
+    .slim-heading,
+    .bold-heading{
+        font-size: 2rem;
+    }
+
     p {
         width: 37%;
     }
