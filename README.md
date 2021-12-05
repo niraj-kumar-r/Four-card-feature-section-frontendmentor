@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-- Learnt about and applied grid on a webpage for the first time. Experienced its usefullness in designing a webpage layout.
+- Learnt about and applied grid on a webpage for the first time. Experienced its usefulness in designing a webpage layout.
 
 
 
