@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [See My Solution on frontend mentor](https://www.frontendmentor.io/solutions/first-website-using-grid-by-a-newbie-I7GCgZjfa)
 - Live Site URL: [My live site](https://niraj-four-section-feature-card.netlify.app/)
 
 ## My process
