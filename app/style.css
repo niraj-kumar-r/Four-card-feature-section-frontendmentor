@@ -125,11 +125,17 @@ p{
 
 @media screen and (min-width: 600px) {
     .main-card{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
 
     }
 
-    
+    #supervisor{
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    #team-builder{
+        
+    }
 
     
 }
